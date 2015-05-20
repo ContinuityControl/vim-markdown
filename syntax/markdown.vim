@@ -86,6 +86,7 @@ exe 'syn region markdownBoldItalic matchgroup=markdownBoldItalicDelimiter start=
 syn region markdownCode matchgroup=markdownCodeDelimiter start="`" end="`" keepend contains=markdownLineStart
 syn region markdownCode matchgroup=markdownCodeDelimiter start="`` \=" end=" \=``" keepend contains=markdownLineStart
 syn region markdownCode matchgroup=markdownCodeDelimiter start="^\s*```.*$" end="^\s*```\ze\s*$" keepend
+syn region markdownCode matchgroup=markdownCodeDelimiter start="^\s*{% highlight.*$" end="^\s*{% endhighlight.*$" keepend
 
 syn match markdownFootnote "\[^[^\]]\+\]"
 syn match markdownFootnoteDefinition "^\[^[^\]]\+\]:"
